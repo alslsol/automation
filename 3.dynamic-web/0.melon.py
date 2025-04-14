@@ -50,7 +50,6 @@ for i in range(5):
     like_cnt = driver.find_element(By.CSS_SELECTOR, 'span#d_like_count').text
         # id 달려 있는 경우 #으로 찾기 가능 -> span 태그 중 d_like_count id 달린 요소 찾기
     like_cnt = like_cnt.replace(',', '') # 쉼표 지우기 >> 데이터 수집 과정에서 데이터 정제하기
-        # 데이터 정제
 
     song_list.append([title, artist, publish_date, like_cnt])
 
